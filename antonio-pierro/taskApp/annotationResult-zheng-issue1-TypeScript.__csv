@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+antonio-pierro/taskApp,1,fae8ad3de751a253c5007d2009ccd21381344ecc,TypeScript,Undetectable,Logic error. Some values are not updated accordingly.,15.0
