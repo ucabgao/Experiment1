@@ -1,2 +1,3 @@
 Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
 RYFN/jQuery.clickToEdit,5,5a5e34f25b7152709e3470dbab8266490b63db5b,TypeScript,Undetectable,whether a string contains whitespaces is invisible to both type systems,41.0
+RYFN/jQuery.clickToEdit,5,5a5e34f25b7152709e3470dbab8266490b63db5b,TypeScript,Undetectable,whether a string contains whitespaces is invisible to both type systems,41.0
