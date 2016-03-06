@@ -1,0 +1,21 @@
+{
+  "name": "q-calc",
+  "version": "0.0.0",
+  "authors": [
+    "Dca <dca35311@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.2.0-rc.2",
+    "angular-bootstrap": "~0.6.0",
+    "angular-resource": "1.2.0-rc.2",
+    "angular-route": "~1.2.0-rc.2"
+  }
+}

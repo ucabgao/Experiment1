@@ -1,0 +1,136 @@
+{% extends "mementa.html" %}
+
+{% block javascript_includes %}
+
+<script type="text/javascript">
+  var init_page_rev = {{page_rev_json | safe }}; 
+  var init_page_entry = {{page_entry_json | safe}}; 
+  var CURRENT_NOTEBOOK = "{{notebook.name}}"; 
+</script> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.12/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/static/vendor/tag-it/js/tag-it.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/static/vendor/jquery.ba-throttle-debounce.js" type="text/javascript" charset="utf-8"></script>
+<script src="/static/vendor/jquery.ba-dotimeout.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="/static/vendor/jquery.typewatch.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" src="/static/vendor/ckeditor/ckeditor.js"></script>
+<script type="text/javascript" src="/static/vendor/ckeditor/adapters/jquery.js"></script>
+<script type="text/javascript" src="/static/vendor/file-uploader/client/fileuploader.js"></script>    
+
+
+
+<script type="text/javascript" src="/static/render.js"></script>  
+<script type="text/javascript" src="/static/page_util.js"></script>    
+
+<script type="text/javascript" src="/static/docdb.js"></script>    
+
+
+<script type="text/javascript" src="/static/fsm.js"></script>    
+<script type="text/javascript" src="/static/server.js"></script>    
+
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+  
+<script type="text/javascript" src="/static/page_dnd.js"></script>    
+<script type="text/javascript" src="/static/page.js"></script>    
+
+
+<link href="/static/vendor/tag-it/css/tagit.ui-zendesk.css" rel="stylesheet" type="text/css">
+
+<link href="/static/vendor/tag-it/css/jquery.tagit.css" rel="stylesheet" type="text/css">
+<link href="/static/vendor/file-uploader/client/fileuploader.css" rel="stylesheet" type="text/css">
+
+
+
+
+
+{% endblock %}
+
+{% block bodywithtoolbar %}
+
+
+
+
+<div class="container-fluid"> 
+  
+  <div id="control" class="sidebar" style="position:fixed"> 
+    
+    <div id='pagetitle' class="pagetitle"> 
+      <div class='view'> 
+        <h1 id='page_title_view'>{{page_rev.title}}</h1>
+      </div>  
+      <div class='edit'>
+        <h1 id='page_title_edit' contentEditable ></h1>
+
+        <button id="page_title_save" class='btn primary'>save </button> 
+        <button id="page_title_cancel" class='btn'> cancel </button>
+      </div> 
+      <div id="page_title_edit_click" class="hovering view hovertarget"> 
+        <a href="#" class='edit'> edit title</a> 
+        <a href="#" id="page_archive_click" class='archive'> archive page </a>
+        <a href="#" id="page_unarchive_click" class='archive'> unarchive page</a>
+      </div>
+    </div>
+    
+
+    Modified : <span id="page_date"> date and time </span> <br>
+    <span id="archive_status"> <b>Archived</b></span>
+    <br>
+
+    <input type="checkbox" name="showhidden" value="hidden" id="showhidden" /> Show Hidden Entries <br />
+
+    <h5>Tags </h5>
+    <div id="tags" > 
+      <ul id="page_tags" > </ul>
+      
+      <div id="tag_suggest"> Suggested tags: <img class="throbber" src="/static/ajax-loader.gif"> </img> 
+        <ul id="existing_tags"> 
+        </ul>
+      </div> 
+      
+    </div>
+
+
+    <div class="page-header"> 
+      <h3>Recent </h3>
+    </div> 
+    
+    <ul class="tabs"> 
+      <li class="active"><a href="#">Entries</a></li> 
+      <li><a href="#">Pages</a></li> 
+    </ul> 
+
+    {{footer_ver()}}
+  </div> 
+  
+  <div id="entry_side" class="content"> 
+    <div id="entries" class="entrycontainer" >
+      
+    </div>
+
+   <div class="well" style="padding: 14px 19px;">
+     Add : 
+     <button class="btn" id="button_add_entry_text"> Text Entry </button> 
+     <button class="btn"  id="button_add_entry_figure"> Figure Entry </button> 
+     <button class="btn" disabled="disabled" id="button_add_entry_table"> Table Entry </button> 
+     <button class="btn" disabled="disabled" id="button_add_entry_github"> Github Entry </button> 
+     <button class="btn" disabled="disabled" id="button_add_entry_github"> Citation Entry </button> 
+     <button class="btn" disabled="disabled" id="button_add_entry_existing">Existing Entry </button> 
+
+     
+   </div> 
+
+  </div> 
+</div>
+
+{% endblock %}
+
+{% block footer %}
+
+{% endblock %}

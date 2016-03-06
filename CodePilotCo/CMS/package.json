@@ -1,0 +1,32 @@
+{
+  "name": "CodePilotCMS",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodePilotCo/CMS.git"
+  },
+  "author": "Will Smidlein <Will@WillSmidlein.com> (http://willsmidlein.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodePilotCo/CMS/issues"
+  },
+  "dependencies": {
+    "express": "~3.4.3",
+    "sequelize": "~2.0.0-beta.0",
+    "mysql": "~2.0.0-alpha9",
+    "nconf": "~0.6.7",
+    "passport": "~0.1.17",
+    "passport-twitter": "~1.0.2",
+    "express3-handlebars": "~0.5.0",
+    "async": "~0.2.9",
+    "connect-redis": "~1.4.5"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "supertest": "latest"
+  },
+  "scripts": {
+    "start": "node app/server.js"
+  }
+}

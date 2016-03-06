@@ -1,0 +1,15 @@
+build
+node_modules
+/.idea/.name
+/.idea/codeStyleSettings.xml
+/.idea/encodings.xml
+/.idea/fraction-matcher.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/inspectionProfiles/profiles_settings.xml
+/.idea/jsLibraryMappings.xml
+/.idea/jsLinters/jshint.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/scopes/scope_settings.xml
+/.idea/vcs.xml
+/.idea/workspace.xml

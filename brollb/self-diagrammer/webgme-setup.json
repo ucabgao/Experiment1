@@ -1,0 +1,36 @@
+{
+  "components": {
+    "plugins": {
+      "Diagrammer": {
+        "src": "src/plugins/Diagrammer",
+        "test": "test/plugins/Diagrammer"
+      },
+      "CreateCode": {
+        "src": "src/plugins/CreateCode",
+        "test": "test/plugins/CreateCode"
+      }
+    },
+    "seeds": {
+      "ClassDiagrams": {
+        "src": "src/seeds/ClassDiagrams"
+      }
+    },
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "visualizers": {}
+  },
+  "dependencies": {
+    "plugins": {
+      "TemplateCreator": {
+        "project": "webgme-simple-nodes",
+        "path": "node_modules/webgme-simple-nodes/src/plugins/TemplateCreator"
+      }
+    },
+    "seeds": {},
+    "addons": {},
+    "decorators": {},
+    "layouts": {},
+    "visualizers": {}
+  }
+}

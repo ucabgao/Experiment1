@@ -1,0 +1,78 @@
+Pages are the riskiest point of user-interaction. There is maximal
+risk that two or more suers will edit a page simultaneously, and
+potentially come into conflict.
+
+There are five operations that can happen when editing a page: 
+
+(A)DD : add a new entry to the page
+(M)OVE : move an entry around (change the order)
+(H)IDE : hide
+(R)EMOVE : remove 
+META(D)ATA : set title, etc. 
+
+The interface here is as follows [single user case] 
+
+1. When looking at a page, the user makes a change
+2. the element is greyed out / some sort of pending visual indication is given
+3. put the change request to the server, in the form of an updated doc
+4. This is a compare-and-swap operation
+5. the page is updated to reflect its understanding of the current state. 
+
+
+Concerns: 
+
+rapid-fire succession of mutation events. 
+
+Say you click "hide" on two entries in rapid succession. Both go to
+pending, but then the full-state-response to entry A's requestwill
+contain "HIDE=false" for entry B. Thus entry B cannot "un-busy" from simply
+any state update, but rather must wait until it's associated state update. 
+
+Two people editing: 
+The app will poll the server once ever N seconds for the current state. Eventually, 
+we'd like to do this with something like websockets/server-sent events, but the
+server infrastructure totally isn't there at the moment. 
+
+In the event of page-editing conflicts, should there be an
+un-conflict-resolvable state, visual feedback will be given. For
+example, if a user is editing an entry that another user removes from the page, 
+the user will be given notification that "FOO has removed this entry from the page, 
+and upon save it will be hidden" Of course, the entry is not really lost. 
+
+-------------------------------------
+
+You cannot use entry id / head as UUID because you could have the same
+entry multiple times on a page!
+
+
+
+What is the unique ID for each Div? Do we render into pages or do we 
+
+To edit the page, don't over-optimize right now: 
+
+for adding an entry: 
+
+1. tell the server to create the new entry
+2. when you get the response, then perform the add operation to the doc
+3. compare-and-swap the updates, once it goes through, render
+4. broadcast the updates to the page doc
+5. set the entry status to edit -- and possibly focus
+
+
+
+-----------------------------------------------------------
+Entries organization
+
+create_entry_view_div
+  render_entry
+    render_entry_rev_view
+
+Think about this somewhat carefully: 
+<entry-wrapper>
+<entry> 
+<revision> 
+
+
+<div entry_id = foo centry_class = bar rev_id = baz class='entry>
+
+

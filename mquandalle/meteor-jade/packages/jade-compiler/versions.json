@@ -1,0 +1,43 @@
+{
+  "dependencies": [
+    [
+      "blaze-tools",
+      "1.0.4"
+    ],
+    [
+      "deps",
+      "1.0.9"
+    ],
+    [
+      "html-tools",
+      "1.0.5"
+    ],
+    [
+      "htmljs",
+      "1.0.5"
+    ],
+    [
+      "meteor",
+      "1.2.0"
+    ],
+    [
+      "minifiers",
+      "1.1.7"
+    ],
+    [
+      "spacebars-compiler",
+      "1.0.7"
+    ],
+    [
+      "tracker",
+      "1.0.9"
+    ],
+    [
+      "underscore",
+      "1.0.4"
+    ]
+  ],
+  "pluginDependencies": [],
+  "toolVersion": "meteor-tool@1.0.35",
+  "format": "1.0"
+}

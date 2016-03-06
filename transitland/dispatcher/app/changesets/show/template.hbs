@@ -1,0 +1,27 @@
+<h2>{{link-to 'Changesets' 'changesets'}} / Changeset #{{model.id}}</h2>
+
+<dl class="dl-horizontal">
+  <dt>Notes</dt>
+  <dd>{{model.notes}}</dd>
+  <dt>Applied</dt>
+  <dd>{{model.applied}}</dd>
+  <dt>Created</dt>
+  <dd>{{model.created_at}}</dd>
+  <dt>Updated</dt>
+  <dd>{{model.updated_at}}</dd>
+  {{#if model.user}}
+    <dt>Author</dt>
+    <dd>{{#link-to 'users.show' model.user}}{{model.user.name}} {{model.user.email}}{{/link-to}}</dd>
+  {{/if}}
+</dl>
+
+{{#unless model.applied }}
+  {{#link-to 'changesets.edit' model class="btn btn-primary" }}Edit changeset notes{{/link-to}}
+  <input type="button" class="btn btn-danger" {{action 'apply'}} value="Apply changeset">
+  {{else}}
+    <em>Applied model; cannot edit or apply.</em>
+{{/unless}}
+
+<h2>Change Payloads</h2>
+
+{{change-payloads-list changeset=model}}

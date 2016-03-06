@@ -1,0 +1,20 @@
+{
+	"db": {
+		"name": "",
+		"user": "",
+		"password": ""
+	},
+	"port": 3000,
+	"twitter": {
+		"key": "",
+		"secret": ""
+	},
+	"s3": {
+		"key": "",
+		"secret": "",
+		"bucket": ""
+	},
+	"logging": {
+		"sequelize": true
+	}
+}

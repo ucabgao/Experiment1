@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Graph Prototype</title>
+
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,900|Vollkorn:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href="/main.css" rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div id="topbar"></div>
+
+        <ul id="story"></ul>
+
+        <div id="global-error"></div>
+
+        <div id="auth-form">
+            <p><span class="login">Login</span> / <span class="register">Register</span></p>
+            <p><input type="text" name="username" id="username" value="" placeholder="Your Name"/></p>
+            <p><input type="password" name="password" id="password" value="" placeholder="Your Password"/></p>
+            <p><input type="password" name="verify-password" id="verify-password" value="" placeholder="Your Password Again"/></p>
+            <p class="auth-errors"></p>
+        </div>
+
+        <div class="starter-editor">
+            <h1 class="title" contenteditable="true">Title</h1>
+            <p class="body" contenteditable="true">Start writing</p>
+        </div>
+
+        <script src="/jquery-2.1.4.min.js"></script>
+        <script src="/moment.min.js"></script>
+        <script src="/signals.min.js"></script>
+        <script src="/crossroads.min.js"></script>
+        <script src="/jquery.history.js"></script>
+        <script src="/js.cookie.js"></script>
+        <script src="/sjcl.js"></script>
+
+        <script src="/sessions.js"></script>
+        <script src="/api.js"></script>
+        <script src="/permalink.js"></script>
+        <script src="/main.js"></script>
+    </body>
+</html>

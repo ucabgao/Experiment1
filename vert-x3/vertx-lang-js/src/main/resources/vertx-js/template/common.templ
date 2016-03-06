@@ -1,0 +1,35 @@
+@comment{'various stuff'}
+@includeNamed{'/vertx-java/template/common-lib.templ'}
+@code{
+  /**
+   * Render a tag link to an html link, this function is used as parameter of the
+   * renderDocToHtml function when it needs to render tag links.
+   */
+  def renderLinkToHtml(link) {
+    var rawType = link.targetType.raw;
+    if (rawType.module != null) {
+      var label = link.label.trim();
+      if (rawType.kind == CLASS_DATA_OBJECT) {
+        if (label.length() == 0) {
+          label = rawType.simpleName;
+        }
+        return "<a href=\"../../cheatsheet/" + rawType.simpleName + ".html\">" + label + "</a>";
+      } else {
+        if (label.length() > 0) {
+          label = "[" + label + "] ";
+        }
+        var elt = link.targetElement;
+        var jsType = rawType.simpleName;
+        var kind = elt.getKind().name();
+        if (kind == "CLASS" || kind == "INTERFACE") {
+          return label + "{@link " + jsType + "}";
+        } else if (kind == "METHOD") {
+          return label + "{@link " + jsType + "#" + elt.getSimpleName().toString() + "}";
+        } else {
+          System.out.println("Unhandled kind " + kind);
+        }
+      }
+    }
+    return null;
+  }
+}

@@ -1,0 +1,6 @@
+www:
+  type: python
+  environment: 
+     SECRETS : "/home/dotcloud/secrets.py"
+data:
+  type: mongodb

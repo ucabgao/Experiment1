@@ -1,0 +1,76 @@
+{% extends "mementa.html" %}
+
+{% block javascript_includes %}
+<script type="text/javascript">
+  var CURRENT_NOTEBOOK = "{{notebook.name}}"; 
+</script> 
+
+<script type="text/javascript" src="/static/server.js"></script>    
+
+<script type="text/javascript" src="/static/notebook.js"></script>    
+
+{%endblock %}
+{% block title %} {{notebook.title}} Notebook {% endblock %}
+{% block content %} 
+
+<div class="container">
+  <div class="page-header"> 
+  <H1> {{notebook.title}} <small> {{notebook.name}} </small>
+    {% if notebook.archived %} <span class='label'> Archived </span> {% endif %}
+      <div class='users'>
+        <small> authors: </small>
+        {% for u in notebook_users %}
+        <img class='avatar' src="/api/user/{{u['_id']}}/avatar/32"
+             user_id="{{u['_id']}}">  
+        
+        {% endfor %}
+      </div> 
+  </H1>
+  </div> 
+  
+  <div class="row show-grid"> 
+    <div class="span7 columns">
+      <H3>Pages most recently edited by you</H3>
+      <div> 
+        <table class='zebra-striped pagelist'> <tbody>
+          {% for p in my_pages %}
+          <tr><td>
+               <span class='pagelist'> 
+                 <b><a href="/notebook/{{notebook.name}}/page/{{p['_id']}}"> {{p['title']}}</a> </b>  
+                 <span class='meta'> 
+                   <span class='date'>{{p['date'][:-7]}}Z</span>
+                 </span> 
+                 {% for t in p.tags %} 
+                 <span class='label'>{{t}}</span>
+                 {% endfor %} 
+               </span>
+          </td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div> 
+    <div class="span7 columns offset2">
+      <H3> All recently-edited pages</h3> 
+      <div> 
+        <table class='zebra-striped pagelist'> <tbody>
+          {% for p in all_pages %}
+          <tr><td>
+               <span class='pagelist'> 
+                 <b><a href="/notebook/{{notebook.name}}/page/{{p['_id']}}">{{p['title']}}</a> </b>  
+                 <span class='meta'> 
+                   by <span>{{p['author']['name']}}</span>
+                   <span class='date'>{{p['date'][:-7]}}Z</span>
+                 </span> 
+               </span>
+          </td></tr>
+          {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div><!-- /row --> 
+
+</div>
+
+{% endblock %}

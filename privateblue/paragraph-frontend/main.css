@@ -1,0 +1,237 @@
+#global-error {
+    display: none;
+    width: 1000px;
+    margin: 140px auto;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    font-size: 2.4em;
+    text-align: center;
+}
+
+/* TOP BAR */
+
+#topbar {
+    display: none;
+    height: 20px;
+    padding: 15px;
+    width: 98%;
+    background-color: #fff;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #eee;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: #aaa;
+    box-shadow: 0px -10px 25px 0px #aaa;
+}
+
+#topbar .loggedin {
+
+}
+
+#topbar .login-button {
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    float: right;
+}
+
+#topbar .logout-button {
+    cursor: pointer;
+    color: black;
+    text-transform: uppercase;
+    float: right;
+}
+
+/* AUTH */
+
+#auth-form {
+    display: none;
+    width: 400px;
+    height: 180px;
+    border: 1px solid #eee;
+    padding: 49px;
+    background-color: #f8f8f8;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -140px;
+    margin-left: -250px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.login {
+    cursor: pointer;
+}
+
+.register {
+    cursor: pointer;
+    opacity: .54;
+}
+
+#verify-password {
+    display: none;
+}
+
+#auth-form p {
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#auth-form input {
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    width: 380px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    outline: none;
+}
+
+.auth-errors {
+    font-family: "Vollkorn", serif;
+    font-weight: 700;
+    font-size: 1em;
+    color: red;
+    text-transform: none;
+    opacity: .54;
+}
+
+/* STARTER EDITOR */
+
+.starter-editor {
+    display: none;
+    width: 1000px;
+    margin: 80px auto;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+}
+
+.starter-editor .title, .starter-editor .body {
+    outline: none;
+    opacity: .54;
+}
+
+/* STORY */
+
+#story {
+    display: none;
+    width: 1000px;
+    margin: 80px auto;
+    list-style-type: none;
+    padding: 0px;
+    font-family: "Vollkorn", serif;
+    font-weight: 400;
+}
+
+.block, .block div {
+    clear: both;
+}
+
+.block {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-family: 'Lato', sans-serif;
+    font-weight: 100;
+    font-size: 4.5em;
+    text-transform: uppercase;
+}
+
+.body {
+    margin: 0px;
+    line-height: 1.35;
+    font-size: 1.4em;
+}
+
+.authortime {
+    opacity: .54;
+    margin-bottom: 5px;
+}
+
+.authortime, .author, .time {
+    font-style: italic;
+    letter-spacing: -.02em;
+    text-decoration: none;
+    color: inherit;
+}
+
+.counts {
+    opacity: .54;
+    font-style: italic;
+    letter-spacing: -.02em;
+    margin-top: 5px;
+}
+
+.counts span {
+    margin-right: 10px;
+}
+
+.seen-count {
+}
+
+.child-count {
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.child-count-clicked {
+    background-color: #888;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.outgoing {
+    list-style-type: none;
+    padding: 0px;
+    overflow: auto;
+}
+
+.sneakpeek {
+    display: none;
+    cursor: pointer;
+    float: left;
+    margin: 5px;
+    padding: 20px;
+    background-color: #eee;
+    opacity: .54;
+    width: 250px;
+    height: 250px;
+}
+
+.sneakpeek .title {
+    font-size: 2em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.sneakpeek .text {
+    height: 200px;
+    overflow: hidden;
+}
+
+.reply-editor {
+    display: none;
+    cursor: pointer;
+    float: left;
+    margin: 4px;
+    border: 1px solid #eee;
+    padding: 20px;
+    opacity: .54;
+    width: 250px;
+    height: 250px;
+}
+
+.reply-editor-active {
+    cursor: default;
+    font-size: 1.4em;
+    outline: none;
+}

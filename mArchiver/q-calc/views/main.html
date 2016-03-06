@@ -1,0 +1,61 @@
+<div class="page-header">
+    <h1>Q-calc 屬性計算機</h1>
+</div>
+<div class="">
+    <input type="text" ng-model="level" ng-change="changeLevel()">
+
+    <input type="checkbox" ng-model="isHideStart">
+    <span>隱藏1等屬性</span>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>名稱</th>
+                <th class="vit" ng-hide="isHideStart" ng-click="predicate = 'vit'; reverse=!reverse">血量</th>
+                <th class="str" ng-hide="isHideStart" ng-click="predicate = 'str'; reverse=!reverse">武力</th>
+                <th class="mag" ng-hide="isHideStart" ng-click="predicate = 'mag'; reverse=!reverse">內力</th>
+                <th class="agi" ng-hide="isHideStart" ng-click="predicate = 'agi'; reverse=!reverse">身法</th>
+                <th class="def" ng-hide="isHideStart" ng-click="predicate = 'def'; reverse=!reverse">防禦</th>
+                <th ng-click="predicate = 'inc.vit'; reverse=!reverse">血量成長</th>
+                <th ng-click="predicate = 'inc.str'; reverse=!reverse">武力成長</th>
+                <th ng-click="predicate = 'inc.mag'; reverse=!reverse">內力成長</th>
+                <th ng-click="predicate = 'inc.agi'; reverse=!reverse">身法成長</th>
+                <th ng-click="predicate = 'inc.def'; reverse=!reverse">防禦成長</th>
+                <th>{{ level }} 血量</th>
+                <th>{{ level }} 武力</th>
+                <th>{{ level }} 內力</th>
+                <th>{{ level }} 身法</th>
+                <th>{{ level }} 防禦</th>
+                <th ng-click="predicate = 'atk'; reverse=!reverse">輸出</th>
+                <th ng-click="predicate = 'surv'; reverse=!reverse">生存</th>
+                <th ng-click="predicate = 'total'; reverse=!reverse">綜合</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="pet in pets | orderBy:predicate:reverse">
+                <td>{{ pet.name }}</td>
+                <td class="vit" ng-hide="isHideStart">{{ pet.vit }}</td>
+                <td class="str" ng-hide="isHideStart">{{ pet.str }}</td>
+                <td class="mag" ng-hide="isHideStart">{{ pet.mag }}</td>
+                <td class="agi" ng-hide="isHideStart">{{ pet.agi }}</td>
+                <td class="def" ng-hide="isHideStart">{{ pet.def }}</td>
+
+                <td>{{ pet.inc.vit | number:1 }}</td>
+                <td>{{ pet.inc.str | number:1 }}</td>
+                <td>{{ pet.inc.mag | number:1 }}</td>
+                <td>{{ pet.inc.agi | number:1 }}</td>
+                <td>{{ pet.inc.def | number:1 }}</td>
+
+                <td>{{ pet.dest.vit | number:1 }}</td>
+                <td>{{ pet.dest.str | number:1 }}</td>
+                <td>{{ pet.dest.mag | number:1 }}</td>
+                <td>{{ pet.dest.agi | number:1 }}</td>
+                <td>{{ pet.dest.def | number:1 }}</td>
+
+                <td>{{ pet.atk   | number:1 }}</td>
+                <td>{{ pet.surv  | number:1 }}</td>
+                <td>{{ pet.total | number:1 }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

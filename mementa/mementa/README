@@ -1,0 +1,16 @@
+Mementa
+====================
+see http://mementa.tumblr.com
+
+Goals: An electronic lab notebook that doesn't suck. Never delete anything ever
+
+
+Document model : 
+
+An "entry" is a thing that can be edited. 
+Think a figure, a block of text, a link, etc. 
+
+A page is a collection of entries
+
+
+

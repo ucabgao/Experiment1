@@ -1,0 +1,55 @@
+{% extends "mementa.html" %}
+
+{% block javascript_includes %}
+<script type="text/javascript" src="/static/home.js"></script>    
+
+{%endblock %}
+{% block title %} Welcome to Mementa {% endblock %}
+{% block content %} 
+
+<div class="container">
+  <H1> Welcome to Mementa </H1>
+  
+  <div class="page-header"> 
+    <h2>Notebooks </h2>
+  </div> 
+  
+  <ul>
+    {% for n in nblist %}
+    <li><H2> <a href='/notebook/{{n['name']}}'> {{n['title']}} </a></H2>  </li> 
+
+    {% endfor %}
+  </ul>
+  <button class="btn primary" data-controls-modal="modal-new-notebook" data-backdrop="true" data-keyboard="true" >Create new notebook </button>
+  
+  
+  <div id="modal-new-notebook" class="modal hide fade">
+    <div class="modal-header">
+      <a href="#" class="close">&times;</a>
+      <h3>Create a new notebook</h3>
+    </div>
+    <div class="modal-body">
+
+      <form action="" class="form-stacked">
+        <fieldset>
+
+          <div class="clearfix">
+            <label for="notebook-title-input">Notebook title</label>
+            <div class="input">
+              <input class="xlarge" id="notebook-title-input" name="notebook-title" size="50" type="text" />
+              <span class="help-inline">The notebook title can be anything you want and as long as you like. </span>
+            </div>
+          </div><!-- /clearfix -->
+        </fieldset>
+      </form>
+
+    <div class="modal-footer">
+      <a href="#" id="create-new-notebook" class="btn primary">Create Notebook <img src="/static/ajax-loader.gif"></a>
+      <a href="#" class="btn secondary">Cancel</a>
+    </div>
+  </div>
+  
+  
+</div>
+
+{% endblock %}

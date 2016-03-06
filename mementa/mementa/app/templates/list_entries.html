@@ -1,0 +1,20 @@
+{% extends "mementa.html" %}
+
+{% block javascript_includes %}
+<script type="text/javascript" src="/static/list_pages.js"></script>    
+
+{%endblock %}
+{% block title %} Entry List Interface {% endblock %}
+{% block content %} 
+
+<div class="container">
+  <H1> Current Entries </H1>
+  <ul> 
+  {%for e in entries %}
+    <li> <h3> <a href="/{{notebook.name}}/page/{{e._id}}">{{e.title}}</a> 
+    <small> <span class='timestamp'> {{e.date}}Z</span>, Last modified by: {{e.author.name}} </small>
+    </h3> </li>
+  {%endfor%}
+  </ul>
+</div> 
+{% endblock %}

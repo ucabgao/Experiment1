@@ -1,0 +1,88 @@
+
+Text
+
+=========
+
+WYSIWYG editors: 
+
+http://www.tinymce.com/wiki.php/Configuration
+http://www.tinymce.com/wiki.php/jQuery_Plugin
+
+Aloha seems immature
+
+Wymeditor: 
+
+There's wymeditor, but it's ugly and I'm not sure how actively
+maintained it is. I do like the idea of some modicum of semantic
+mark-up though
+
+CLEditor: 
+clean, quick, on github
+https://github.com/cleditor/cleditor
+last updated at the beginning of 2011?
+
+YUI rich text? 
+Still no YUI3 widget
+
+
+
+Ohh, I like Proper
+https://github.com/michael/proper/branches
+Except it seems like proper has issues with the latest chrome
+
+New options: 
+http://speckedit.com/demo
+
+CKeditor survival guide from stack overflow: 
+http://stackoverflow.com/questions/1957156/ckeditor-how-to-add-a-custom-button-to-the-toolbar-that-calls-a-javascript-funct/1966239#1966239
+
+
+Figure
+========================
+We want to support a few figure data types, including: 
+png
+jpeg
+PDF
+
+For all of these, we would like to be able to render a certain size
+inline, while preserving the link to the original.
+
+Backend: 
+have a /files interface where you can put (post) and get files
+Files are write-only
+
+Figure: 
+title : optional title
+caption : optional caption
+display-width : max width for rendering each picture
+
+images : array of 
+   { file : link to file,
+     // denormed data about the file, like size, mime type, etc. 
+     
+     caption : optional per-image caption? 
+   }         
+        
+Backend operation: 
+1. create figure
+2. upload file
+3. add link to file
+4. that's it! 
+
+GUI: 
+Create new figure
+drag/drop files in
+add captions if you want
+a "gallery" sort of interface
+
+File upload options: 
+http://www.uploadify.com/
+http://www.plupload.com/
+http://pixelcone.com/fileuploader/
+
+http://onehub.com/blog/posts/designing-an-html5-drag-drop-file-uploader-using-sinatra-and-jquery-part-1/
+
+http://www.html5rocks.com/en/tutorials/file/dndfiles/
+http://html5doctor.com/native-drag-and-drop/
+http://www.thebuzzmedia.com/html5-drag-and-drop-and-file-api-tutorial/
+to 
