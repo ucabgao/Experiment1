@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+tiny-jsonrpc/tiny-jsonrpc,18,30210ec8d916b65cf1bed0f1f4f756b5c9facc5c,Flow,Undetectable,First, the bug is hightly dynamic for that it can be revealed on some inputs. Secondly, this bug is related to the construction of a regular expression, and therefore is invisible to these two type systems.,6.0
