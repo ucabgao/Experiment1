@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+joelmukuthu/angular-snapscroll,2,d4e4bd03fbf2976ad9ba452013c9ca70f079535e,TypeScript,Undetectable,Though this is related to a field access, whether the bug will be revealed depends on how the library is used. When combined with jQuery, it will be caught at runtime in some specific browsers. Otherwise, it will not. This bug depends on its environment and therefore cannot be detected statically. ,462.0
