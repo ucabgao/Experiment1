@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+intersystems-ru/webterminal,50,999e8b1f50a4c55aef203565376be51e7673d7fd,Flow,Undetectable,String content is not visible to these two type systems that do not support more coarse-grained types than "string".,29.0
