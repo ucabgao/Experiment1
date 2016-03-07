@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+wechatui/swiper,10,2d8b1536c80adf3923c608c5558e4e6be863bec0,TypeScript,Undetectable,this bug is highly dynamic for that it is related to an event listener. The buggy version incorrectly prevent the event from responding to a click.,17.0
