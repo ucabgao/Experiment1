@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+privateblue/paragraph-frontend,11,4cb771910cf74c711afe6182c8b7bd6d2c6753c2,Flow,Undetectable,Logic error. Missing functionality, which is not type related.,41.0
