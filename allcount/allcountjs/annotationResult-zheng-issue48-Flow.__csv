@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+allcount/allcountjs,48,2074b4e13e886bb08972a7b9545de1df9ec08d87,Flow,Undetectable,Logic error. Forgot to set the value which further caused a UI error.,0.0
