@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+GauntletWizard/trollian,2,2179c3b2c999b8a8c2e2a97669b83fe2750b2be4,TypeScript,Undetectable,Logic error. Flawed regular expression that are invisible to these two type systems.,41.0
