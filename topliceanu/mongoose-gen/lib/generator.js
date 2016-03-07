@@ -1,9 +1,6 @@
 var util = require('util');
-
 var _ = require('underscore');
 var mongoose = require('mongoose');
-
-
 // Dict to keep all registered custom validators, setters, getters and defaults.
 var hash = {
     validator: {},
@@ -11,8 +8,6 @@ var hash = {
     getter: {},
     default: {}
 };
-
-
 /**
  * Creates functions specialized in registering custom validators, setters,
  * getters and defaults.
@@ -38,8 +33,6 @@ var set = function (param) {
         }
     };
 };
-
-
 /**
  * Returns a previously registered function.
  * @param {String} param - one of 'validator', 'setter', 'getter', 'default'
@@ -50,12 +43,10 @@ var set = function (param) {
 var get = function (param, key) {
     var fn = hash && hash[param] && hash[param][key];
     if (!fn) {
-        throw new Error('Unregistered "'+param+'" with name "'+key+'"');
+        throw new Error('Unregistered "' + param + '" with name "' + key + '"');
     }
     return fn;
 };
-
-
 // List of all reserved keys used by mongoose in schema definition.
 var whitelist = [
     'lowercase',
@@ -77,8 +68,6 @@ var whitelist = [
     'sparse',
     'validate'
 ];
-
-
 /**
  * Converts type names into actual types supported by mongoose.
  * @param {String} type - one of 'string', 'number', 'boolean',
@@ -100,10 +89,8 @@ var matchType = function (type) {
     if (types[type.toLowerCase()]) {
         return types[type.toLowerCase()];
     }
-    throw new Error('unknown type '+type);
+    throw new Error('unknown type ' + type);
 };
-
-
 /**
  * Function verifies that `value` is a valid parameter of RegExp constructor.
  * @param {String} type
@@ -118,10 +105,8 @@ var check = function (type, value) {
         }
         return new RegExp(value);
     }
-    throw new Error('unexpected type '+type);
+    throw new Error('unexpected type ' + type);
 };
-
-
 /**
  * Converts a plain json schema definition into a mongoose schema definition.
  *
@@ -156,8 +141,6 @@ var convert = function (descriptor) {
     });
     return decoded;
 };
-
-
 /**
  * Extend mongoose.Schema to allow schema definition from plain json documents.
  *
@@ -170,15 +153,11 @@ var getSchema = function (descriptor, connection, options) {
     var definition = convert(descriptor);
     return new connection.Schema(definition, options);
 };
-
-
 // Private api, just for testing.
 exports._hash = hash;
 exports._get = get;
 exports._matchType = matchType;
 exports._check = check;
-
-
 // Public api.
 exports.setValidator = set('validator');
 exports.setSetter = set('setter');
