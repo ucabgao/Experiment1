@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+tomkp/react-split-pane,11,ba15d2713550fd980d08d11d2ccc16dcae54bac9,TypeScript,Undetectable,UI error. Horizontal orientation misused with vertical. Secondly, string content is invisible to these two type systems.,26.0
