@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+mArchiver/q-calc,1,32f23fdc12492e07a6cad27265516ddf2f4742cd,TypeScript,Undetectable,Logic error. The file path of type string was wrong, which is invisible to both type systems.,11.0
