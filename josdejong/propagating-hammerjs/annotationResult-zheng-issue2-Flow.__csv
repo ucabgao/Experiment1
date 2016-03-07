@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+josdejong/propagating-hammerjs,2,5ac9249ba4ac12774da44007665fb014297b085f,Flow,Undetectable,Logic error. Library without invokation. No test harness. Malfunction of a function. Highly dynamic.,240.0
