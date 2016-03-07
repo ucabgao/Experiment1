@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+mementa/mementa,108,dd67239a1a439aed04d6779b25c23bb9802636b1,TypeScript,Undetectable,Logic error. Unnecessary return which prevents subsequent code to be executed. And the bug is highly dynamic as it depends on some ui interaction.,83.0
