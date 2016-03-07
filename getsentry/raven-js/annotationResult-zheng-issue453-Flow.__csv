@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+getsentry/raven-js,453,1068a0c8a1da50859f08ee34fa6114d72b4d3a3d,Flow,Undetectable,Logic error, which is related to synchronization and imposed a fixed order. The bug was revealed by multiple async requests.,84.0
