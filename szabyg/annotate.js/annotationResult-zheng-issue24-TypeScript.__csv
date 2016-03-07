@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+szabyg/annotate.js,24,67e89c6484f9014989de1614ef66f4af42ea93e9,TypeScript,Undetectable,syntax error. missing semi-colon.,69.0
