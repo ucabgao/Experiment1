@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+topliceanu/mongoose-gen,10,b305ca7c8cf5e6a128ef5a387986369084fe2e12,Flow,Undetectable,Does not support literal properties,218.0

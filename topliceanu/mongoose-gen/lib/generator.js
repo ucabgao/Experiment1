@@ -1,3 +1,5 @@
+/* @flow */
+
 var util = require('util');
 
 var _ = require('underscore');
@@ -78,6 +80,16 @@ var whitelist = [
     'validate'
 ];
 
+class T {
+        'string': any;
+        'number': any;
+        'boolean': any;
+        'date': any;
+        'buffer': any;
+        'objectid': any;
+        'mixed': any;
+        'array': any;
+}
 
 /**
  * Converts type names into actual types supported by mongoose.
@@ -88,7 +100,7 @@ var whitelist = [
  */
 var matchType = function (type) {
     var output;
-    var types = {
+    var types:T = {
         'string': String,
         'number': Number,
         'boolean': Boolean,
