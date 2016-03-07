@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+brollb/self-diagrammer,7,eac9dd77261bbd612d2a0f0a7665c8442855ade9,Flow,Undetectable,Logic error. Reverse order of two nodes and therefore wrong direction. The bug is invisible to the two type systems.,61.0
