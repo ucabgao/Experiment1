@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+mozilla/picl-mocks,15,dcccc700250814a821e1594dc3de4a8665f3ba88,TypeScript,Undetectable,Logic error. Highly dynamic, for the bug relies on the interaction between the user and UI. Forgot to handle the case of signing in with a non-existing account.,43.0
