@@ -1,3 +1,5 @@
+/* @flow */
+
 // Dependencies
 var OS = require("os");
 

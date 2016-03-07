@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+IonicaBizau/node-cli-box,5,38aaa702932fc8672b63711eef814206765579d9,Flow,Detectable,Flow can infer possibly undefined value,38.0
