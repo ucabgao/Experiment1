@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+melvincarvalho/timeline,13,16d1733579f3beb9dccd83f73dfdbd6f41e8b436,Flow,Undetectable,Logic error. Forgot to reset the values of some variables when refreshing,14.0
