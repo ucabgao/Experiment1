@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+vert-x3/vertx-lang-js,27,bd875cb34c01f814deb2b4a2d7fb795adf0c6c63,Flow,Undetectable,Logic error. Missing a branch. The conditional statement checks the version of underlying JVM. Not visible to the two type systems.,25.0
