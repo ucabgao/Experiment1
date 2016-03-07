@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+phetsims/fraction-matcher,81,46e7f3f3210f88e35da60e0accc216caa4dd5886,TypeScript,Undetectable,Does not support static check of undefined. No support for nullable and undefined annotation.,38.0
