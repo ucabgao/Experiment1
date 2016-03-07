@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+RubyLouvre/mmRequest,4,b1cb4c36b82b7b6b3577cbe1756479dba1b8846d,Flow,Undetectable,Strings contents are invisible to these two type systems that does not currently support refinement types,56.0
