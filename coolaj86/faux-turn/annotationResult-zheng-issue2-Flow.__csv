@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+coolaj86/faux-turn,2,03bea5932a480853f22a5033fb58d7c22310631e,Flow,Undetectable,Logic error. The bug is dynamic and due to a malfunction that is not related to types. The fix rewrote the functionality.,74.0
