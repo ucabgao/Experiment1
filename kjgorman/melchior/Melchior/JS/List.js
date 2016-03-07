@@ -1,9 +1,11 @@
+/* @flow */
+
 var Lists = function(){
     "use strict";
 
     var List = function () { }
 
-    function lconcat (lst) {
+    function lconcat (lst: ?Object) {
         //TODO -- this will obviously fail for more than one key...
         return toUHCList(lst._1)
     }
