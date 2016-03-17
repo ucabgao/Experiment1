@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+phetsims/fraction-matcher,81,46e7f3f3210f88e35da60e0accc216caa4dd5886,Flow,Detectable,"Construct two interfaces which indicate that shape.view might be null/undefined.",132.0

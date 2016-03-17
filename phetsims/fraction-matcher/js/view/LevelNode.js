@@ -1,3 +1,5 @@
+/* @flow */
+
 // Copyright 2002-2014, University of Colorado Boulder
 
 /**
@@ -5,6 +7,14 @@
  *
  * @author Anton Ulyanov (Mlearner)
  */
+
+interface t {
+    view:?s;
+}
+
+interface s {
+    indexshape:any;
+}
 
 define( function( require ) {
   'use strict';
@@ -338,7 +348,7 @@ define( function( require ) {
         return closestZone;
       },
       //animation for 'snapping' shape to correct position
-      dropShapeToZone: function( shape, zoneIndex ) {
+      dropShapeToZone: function( shape:t, zoneIndex ) {
         //target dropZone now = indexShape
         this.model.dropZone[ zoneIndex ] = shape.view.indexShape;
         shape.dropZone = zoneIndex;
