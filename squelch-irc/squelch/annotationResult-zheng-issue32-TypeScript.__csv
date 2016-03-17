@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+squelch-irc/squelch,32,c2506f96d82efd7ce68fb2062c6cab4bdf289bdb,TypeScript,Unknown,"Too much imports. TypeScript is not able to automatically resolve any of them.",522.0
