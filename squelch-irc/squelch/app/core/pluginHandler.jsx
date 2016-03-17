@@ -1,3 +1,4 @@
+/* @flow */
 
 import _ from 'lodash';
 import State from '../scripts/stores/state';
