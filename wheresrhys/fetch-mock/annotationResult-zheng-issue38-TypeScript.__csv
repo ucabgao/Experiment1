@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+wheresrhys/fetch-mock,38,a75eabec4897632fdecc8c2a3a8196219ad98c63,TypeScript,Undetectable,"EIS. Scope Issue. But I failed to understand the fix.",148.0
