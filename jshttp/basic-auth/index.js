@@ -1,3 +1,12 @@
+/* @flow */
+
+interface t {
+headers:?s;
+}
+
+interface s {
+    authorization:any;
+}
 /*!
  * basic-auth
  * Copyright(c) 2013 TJ Holowaychuk
@@ -45,7 +54,7 @@ var userPassRegExp = /^([^:]*):(.*)$/
  * @public
  */
 
-function auth(req) {
+function auth(req:t) {
   if (!req) {
     throw new TypeError('argument req is required')
   }

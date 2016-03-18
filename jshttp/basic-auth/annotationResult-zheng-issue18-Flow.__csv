@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+jshttp/basic-auth,18,d479495a78fac61f5437511ba9fbd66eb6f0fd95,Flow,Detectable,"Add annotation which indicates that req.headers can be null/undefined.",287.0
