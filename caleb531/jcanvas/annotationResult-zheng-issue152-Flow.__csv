@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+caleb531/jcanvas,152,4d1be83449f40e5180f10f8237f5c61f0463cb65,Flow,Undetectable,"Resource error / incomplete predicates. An incomplete predicate causes function layers to run recursively, thereby causing an error of out of stack space. Though the fix seems to also check the nullity of some properties, bug report is what we focus on.",103.0
