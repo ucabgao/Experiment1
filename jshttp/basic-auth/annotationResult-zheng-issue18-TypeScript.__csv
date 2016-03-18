@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+jshttp/basic-auth,18,d479495a78fac61f5437511ba9fbd66eb6f0fd95,TypeScript,Undetectable,"Null/undefined handling. TypeScript does not support non-nullable type annotations.",9.0
