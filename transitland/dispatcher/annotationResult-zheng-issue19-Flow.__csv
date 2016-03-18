@@ -1,0 +1,2 @@
+Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
+transitland/dispatcher,19,6f875e2bfdce72912c39917a78d239b43946ad4c,Flow,Undetectable,"Incomplete predicate. Forgot to check whether the request is GET, not POST or PUT.",164.0
