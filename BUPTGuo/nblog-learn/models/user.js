@@ -1,5 +1,14 @@
+/* @flow */
+
+interface t
+{
+    name:string;
+    password:string;
+    email:string;
+}
+
 var mongodb = require('./db');
-function User(user){
+function User(user:t){
 	this.name = user.name;
 	this.password = user.password;
 	this.email = user.email;
