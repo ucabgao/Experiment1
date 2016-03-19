@@ -1,2 +1,2 @@
 Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
-CodePilotCo/CMS,85,95d5d0a7f757a3187c7e20662e9f435efba3a0c9,Flow,Undetectable,Logic error. Unnecessarily resets an object's property.,33.0
+CodePilotCo/CMS,85,95d5d0a7f757a3187c7e20662e9f435efba3a0c9,Flow,Undetectable,"EIS. Unnecessarily resets an object's property.",33.0
