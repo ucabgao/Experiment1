@@ -1,2 +1,3 @@
 Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
 topliceanu/mongoose-gen,10,b305ca7c8cf5e6a128ef5a387986369084fe2e12,TypeScript,Detectable,Adding a field in a customised type annotation reveals the bug.,442.0
+topliceanu/mongoose-gen,10,b305ca7c8cf5e6a128ef5a387986369084fe2e12,TypeScript,Detectable,"Revise to the annotation.",296.0

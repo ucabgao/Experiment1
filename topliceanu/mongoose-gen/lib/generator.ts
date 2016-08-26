@@ -79,14 +79,14 @@ var whitelist = [
 ];
 
 interface T {
-        'string': any,
-        'number': any,
-        'boolean': any,
-        'date': any,
-        'buffer': any,
-        'objectid': any,
-        'mixed': any,
-        'array': any
+        'string': any;
+        'number': any;
+        'boolean': any;
+        'date': any;
+        'buffer': any;
+        'objectid': any;
+        'mixed': any;
+        'array': any;
 }
 
 
