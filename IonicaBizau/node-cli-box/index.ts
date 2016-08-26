@@ -245,7 +245,7 @@ function Box(options, text) {
         box += this.settings.marks.ne;
 
         // The other lines
-        var nextLine : {} | undefined = this.settings.lines.length
+        var nextLine : Object | undefined = this.settings.lines.length
                        ? this.settings.lines.shift() : undefined;
         var lastCode = '';
 
