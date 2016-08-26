@@ -1,9 +1,14 @@
+interface l {
+    _1:any;
+}
+
+
 var Lists = function(){
     "use strict";
 
     var List = function () { }
 
-    function lconcat (lst: {}) {
+    function lconcat (lst: l | undefined | null) {
         //TODO -- this will obviously fail for more than one key...
         return toUHCList(lst._1)
     }
