@@ -1,6 +1,12 @@
 // Dependencies
 var OS = require("os");
 
+interface n {
+    offset:any;
+    text:any;
+    escapeCodes:any;
+}
+
 /**
  * Box
  * Creates a new instance of Box function
@@ -245,7 +251,7 @@ function Box(options, text) {
         box += this.settings.marks.ne;
 
         // The other lines
-        var nextLine : Object | undefined = this.settings.lines.length
+        var nextLine : n | undefined = this.settings.lines.length
                        ? this.settings.lines.shift() : undefined;
         var lastCode = '';
 

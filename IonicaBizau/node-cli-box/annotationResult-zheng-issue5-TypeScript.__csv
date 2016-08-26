@@ -2,3 +2,4 @@ Project,Issue,Commit,TypeChecker,Detectable,Comment,AnnotationTime
 IonicaBizau/node-cli-box,5,38aaa702932fc8672b63711eef814206765579d9,TypeScript,Undetectable,TypeScript does not support Undefined annotation.,494.0
 IonicaBizau/node-cli-box,5,38aaa702932fc8672b63711eef814206765579d9,TypeScript,Detectable,"TypeScript can detect nullability.",316.0
 IonicaBizau/node-cli-box,5,38aaa702932fc8672b63711eef814206765579d9,TypeScript,Detectable,"TypeScript can detect nullability.",3.0
+IonicaBizau/node-cli-box,5,38aaa702932fc8672b63711eef814206765579d9,TypeScript,Detectable,"TypeScript detects this.",238.0
