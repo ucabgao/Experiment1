@@ -13,7 +13,7 @@ interface t {
 }
 
 interface s {
-    indexshape:any;
+    indexShape:any;
 }
 
 define( function( require ) {
